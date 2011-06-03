@@ -1,0 +1,10 @@
+gem install heroku
+rvm use 1.9.2@newvision --create
+gem install heroku
+gem install bundler
+source "http://rubygems.org"
+
+gem "heroku"
+gem "rails", "~>3.0.7"
+
+bundle install
