@@ -1,5 +1,6 @@
 body {
   padding: 10px;
-  background-image: url("basic_radio.png") repeat-x repeat-y;
+  background-image: url("../images/basic_radio.png");
+  background-repeat: repeat;
 }
 
