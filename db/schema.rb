@@ -10,7 +10,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110604002610) do
+ActiveRecord::Schema.define(:version => 20110607234830) do
+
+  create_table "authors", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.date     "birth"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "post_tags", :force => true do |t|
+    t.integer  "post_id"
+    t.integer  "tag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -24,6 +40,14 @@ ActiveRecord::Schema.define(:version => 20110604002610) do
   create_table "tags", :force => true do |t|
     t.string   "name"
     t.integer  "points"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "password"
+    t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
