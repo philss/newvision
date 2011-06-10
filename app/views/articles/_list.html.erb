@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th>Título</th>
+    <th>Autor</th>
+    <th>Corpo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.author_id %></td>
+    <td><%= article.body.slice(100)%></td>
+    <td><%= link_to 'Exibir', article %></td>
+    <td><%= link_to 'Editar', edit_article_path(article) %></td>
+    <td><%= link_to 'Excluir', article, :confirm => 'Você tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

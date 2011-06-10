@@ -1,4 +1,10 @@
-<div class="content">
-  <h1>Hello world!</h1>
+<div class="home_page_box">
+  <% @articles.each do |article| %>
+    <div class="posts_boxes">
+      <h2 class="article_title"><%= link_to article.title, article %></h2>
+      <div class="author_name">Criado por: <%= article.author.name %></div>
+      <div class="article_body"><%= article.body %></div>
+    </div>
+  <% end %>
 </div>
 

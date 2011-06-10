@@ -7,7 +7,28 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <%= yield %>
-
+  <div id="header">
+    <div class="struct">
+      <div id="logo">New vision</div>
+      <ul id="main_menu">
+        <li>Principal</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+      </ul>
+    </div>
+  </div>
+  <div id="content" class="struct">
+    <%= yield %>
+  </div>
+  <div id="footer" class="struct">
+    Criado por: Philip Sampaio<br />
+    Tecnologias:
+    <ul> 
+      <li>Rails</li>
+      <li>Rails</li>
+      <li>Rails</li>
+      <li>Rails</li>
+    </ul>
+  </div>
 </body>
 </html>
