@@ -1,4 +1,6 @@
 Newvision::Application.routes.draw do
+  resources :articles
+
   resources :posts
 
   get "welcome/index"
