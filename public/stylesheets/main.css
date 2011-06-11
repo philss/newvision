@@ -94,3 +94,9 @@ a.author_name {
 .article_body {
 
 }
+
+/* Parte dos forms */
+label {
+  display: block;
+  clear: both;
+}

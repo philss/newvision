@@ -1,2 +1,22 @@
-<h1>Welcome#contact</h1>
-<p>Find me in app/views/welcome/contact.html.erb</p>
+<h1>Criando contato</h1>
+<p>Você pode entrar em contato com o Philip através do email: <a href="mailto:philip.sampaio@gmail.com">philip.sampaio@gmail.com</a>. <br />
+Ou através do formulário abaixo(não funciona ainda :/)
+</p>
+
+<form method="post" action="/contact">
+  <p>
+    <label for="name">Nome: </label>
+    <input type="text" name="name" maxlenght="100" />
+  </p>
+  <p>
+    <label for="email">Email: </label>
+    <input type="text" name="email" maxlenght="100" />
+  </p>
+  <p>
+  <label for="message">Mensagem </label>
+    <textarea name="message" rows="10" cols="35"></textarea>
+  </p>
+  <p>
+    <input type="submit" value="Enviar" />
+  </p>
+</form>

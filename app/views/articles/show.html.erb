@@ -1,20 +1,13 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <b>Título:</b>
-  <%= @article.title %>
-</p>
-
-<p>
-  <b>Autor:</b>
-  <%= @article.author.name %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%= @article.body %>
-</p>
+<div class="posts_boxes">
+  <h2 class="article_title"><%= link_to @article.title, @article %></h2>
+  <div class="author_box">
+    Criado por: <%= link_to(@article.author.name, @article.author, :class => "author_name") %> 
+    <%= article_date @article.created_at %>
+  </div>
+  <div class="article_body"><%= @article.body.html_safe %></div>
+</div>
 
 
-<%= link_to 'Editar', edit_article_path(@article) %> |
-<%= link_to 'Voltar', articles_path %>
+<%# link_to 'Editar', edit_article_path(@article) %>
+<%# link_to 'Voltar', articles_path %>
