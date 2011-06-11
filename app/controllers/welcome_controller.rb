@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    @articles = Article.find(:all, :limit => 10)
+    @articles = Article.find(:all, :limit => 10,:order => "created_at DESC")
   end
 
   def about

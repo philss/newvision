@@ -9,11 +9,11 @@
 <body>
   <div id="header">
     <div class="struct">
-      <div id="logo">New vision</div>
-      <ul id="main_menu">
-        <li>Principal</li>
-        <li>Sobre</li>
-        <li>Contato</li>
+      <div id="logo"><%= link_to "New vision","/" %></div>
+      <ul id="main_menu" class="inline_list">
+        <li><%= link_to "Principal","/" %></li>
+        <li><%= link_to "Sobre", "/about" %></li>
+        <li><%= link_to "Contato", "/contact" %></li>
       </ul>
     </div>
   </div>
@@ -21,13 +21,16 @@
     <%= yield %>
   </div>
   <div id="footer" class="struct">
-    Criado por: Philip Sampaio<br />
-    Tecnologias:
-    <ul> 
-      <li>Rails</li>
-      <li>Rails</li>
-      <li>Rails</li>
+    Tecnologias: 
+    <ul class="inline_list"> 
+      <li><%= link_to "RoR",  "http://www.rubyonrails.org", :title => "Ruby on Rails" %></li>
+      <li><%= link_to "HTML 5", "http://www.w3.org/TR/html5/", :title => "HTML 5" %></li>
+      <li><%= link_to "Heroku", "http://www.heroku.com/", :title => "Heroku" %></li>
     </ul>
+    <p>
+      Criado por Philip Sampaio como parte dos trabalhos de Ferramentas Web e Aspectos Legais e éticos do marketing digital. Matéria ministrada pelo professor
+      André Luis.<br />
+    </p>
   </div>
 </body>
 </html>

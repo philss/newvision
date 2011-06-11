@@ -13,6 +13,8 @@ Newvision::Application.routes.draw do
 
   get "welcome/contact"
 
+  match "about" => "welcome#about"
+  match "contact" => "welcome#contact"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
