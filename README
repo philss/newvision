@@ -1,3 +1,12 @@
+NewVision - Heroku test
+=======================
+
+# Português
+
+Esse é um projeto de teste, que serviu tanto de trabalho para disciplina de Ferramentas Web I como para testar o heroku com Ruby on Rails 3.0.7
+
+Alguns passos para instalação:
+
 rvm use 1.9.2@newvision --create
 gem install bundler
 
